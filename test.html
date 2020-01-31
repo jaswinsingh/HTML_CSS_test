@@ -2,6 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+    $("#A").click(function(){
+      $("#change").text("Hello world!");
+});});
+    </script>
     <link rel="stylesheet" href="test.css?v=1">
     <title></title>
   </head>
@@ -41,7 +49,7 @@
         <div class="content">
           <div class="buttons">
               <ul class="catelogbutton">
-                <li id="A">HTML</li>
+                <li id="A" >HTML</li>
                 <li id="B">CSS</li>
                 <li id="C">JS</li>
               </ul>
@@ -50,7 +58,7 @@
 
           <div class="contentImage">
             <div class="catelogText">
-              <h2>HELLO HTML!</h2>
+              <h2 id="change">HELLO HTML!</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
           </div>
